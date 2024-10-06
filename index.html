@@ -3,49 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal Vibrante</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dylan Tacuma - Universo Digital Creativo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="logo animate__animated animate__bounceIn">
             <i class="fas fa-code"></i>
         </div>
-        <h1>Mi Página Personal</h1>
+        <h1 class="animate__animated animate__fadeInDown">Dylan Tacuma</h1>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#inicio" class="animate__animated animate__fadeInLeft">Inicio</a></li>
+                <li><a href="#servicios" class="animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">Servicios</a></li>
+                <li><a href="#habilidades" class="animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;">Habilidades</a></li>
+                <li><a href="#testimonios" class="animate__animated animate__fadeInLeft" style="animation-delay: 0.6s;">Testimonios</a></li>
+                <li><a href="contacto.html" class="animate__animated animate__fadeInLeft" style="animation-delay: 0.8s;">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="parallax-bg">
+        <div class="parallax-content">
+            <h2 class="animate__animated animate__zoomIn">Bienvenido a mi Universo Digital</h2>
+            <p class="animate__animated animate__fadeIn" style="animation-delay: 0.5s;">Donde la creatividad y la tecnología se fusionan</p>
+        </div>
+    </div>
+
     <main>
         <section id="inicio" class="animated-section">
-            <h2>Bienvenido a mi mundo digital</h2>
-            <p>Hola, soy Dylan Tacuma. Explora mi universo de creatividad y tecnología.</p>
+            <h2>Explora mi mundo digital</h2>
+            <p>Hola, soy Dylan Tacuma. Sumérgete en mi universo de creatividad y tecnología.</p>
             <div class="cta-button">
-                <a href="contacto.html">¡Contáctame!</a>
+                <a href="contacto.html" class="animate__animated animate__pulse animate__infinite">¡Contáctame ahora!</a>
             </div>
         </section>
 
         <section id="servicios" class="animated-section">
-            <h2>Mis Servicios</h2>
+            <h2>Mis Servicios Extraordinarios</h2>
             <div class="service-grid">
-                <div class="service-item">
+                <div class="service-item animate__animated animate__fadeInUp">
                     <i class="fas fa-laptop-code"></i>
-                    <h3>Desarrollo Web</h3>
+                    <h3>Desarrollo Web Mágico</h3>
                 </div>
-                <div class="service-item">
+                <div class="service-item animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
                     <i class="fas fa-mobile-alt"></i>
-                    <h3>Diseño Responsivo</h3>
+                    <h3>Diseño Responsivo Encantador</h3>
                 </div>
-                <div class="service-item">
+                <div class="service-item animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
                     <i class="fas fa-search"></i>
-                    <h3>Full Stake</h3>
+                    <h3>Full Stack Asombroso</h3>
                 </div>
+                <div class="service-item animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Optimización de Rendimiento</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="animated-section">
+            <h2>Mis Superpoderes Tecnológicos</h2>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%;" data-skill="HTML/CSS">HTML/CSS: 90%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%;" data-skill="JavaScript">JavaScript: 85%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%;" data-skill="React">React: 80%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%;" data-skill="Node.js">Node.js: 75%</div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="animated-section">
+            <h2>Lo que dicen de mí</h2>
+            <div class="testimonial animate__animated animate__fadeIn">
+                <p>"Dylan transformó nuestra idea en una realidad digital impresionante. ¡Un verdadero mago del código!"</p>
+                <p class="testimonial-author">- María González, CEO de TechInnovate</p>
+            </div>
+            <div class="testimonial animate__animated animate__fadeIn" style="animation-delay: 0.3s;">
+                <p>"Trabajar con Dylan fue una experiencia increíble. Su creatividad y habilidades técnicas son incomparables."</p>
+                <p class="testimonial-author">- Carlos Rodríguez, Fundador de StartupX</p>
             </div>
         </section>
     </main>
@@ -53,16 +95,18 @@
     <aside class="animated-section">
         <h3>Enlaces Inspiradores</h3>
         <ul>
-            <li><a href="https://coolors.co" target="_blank">Coolors</a></li>
-            <li><a href="https://dribbble.com" target="_blank">Dribbble</a></li>
-            <li><a href="https://codepen.io" target="_blank">CodePen</a></li>
+            <li><a href="https://coolors.co" target="_blank">Coolors - Paletas de colores mágicas</a></li>
+            <li><a href="https://dribbble.com" target="_blank">Dribbble - Inspiración visual infinita</a></li>
+            <li><a href="https://codepen.io" target="_blank">CodePen - Playground de código creativo</a></li>
         </ul>
     </aside>
 
     <footer>
-        <p>&copy; 2024 Dylan Tacuma</p>
+        <p>&copy; 2024 Dylan Tacuma - Creador de Experiencias Digitales Extraordinarias</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="script.js"></script>
+ 
 </body>
 </html>

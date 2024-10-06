@@ -247,3 +247,69 @@ footer {
         margin: 10px 0;
     }
 }
+
+/* Nuevos estilos para animaciones y efectos */
+.parallax-bg {
+    background-image: url('https://source.unsplash.com/random/1920x1080?technology');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.parallax-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 1;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-progress {
+    width: 0;
+    height: 20px;
+    background-color: var(--color-accent);
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+.particle {
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.5;
+}
